@@ -34,6 +34,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
       <IonCardHeader>
         <IonCardTitle>{product.title}</IonCardTitle>
         <IonCardSubtitle>{formatDate}</IonCardSubtitle>
+        <IonCardSubtitle color={"dark"}>{product.price + '$'}</IonCardSubtitle>
       </IonCardHeader>
       <IonCardContent>{product.description}</IonCardContent>
       <IonButton onClick={saveProduct}>
